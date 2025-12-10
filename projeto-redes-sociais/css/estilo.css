@@ -28,7 +28,7 @@ section#telefone{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-70%, -60%);
 
     background-image: url('../imagens/frame-iphone.png');
     background-repeat: no-repeat;
@@ -51,9 +51,10 @@ section#redes-sociais{
 }
 
 section#redes-sociais img{
-    width: 50px;
+    width: 30px;
     border-radius: 50%;
-    margin: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
     box-sizing: border-box;
 }
