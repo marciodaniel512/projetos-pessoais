@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 50px;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bem-vindo ao sistema!</h1>
+    <p id="user-name"></p>
+
+    <script>
+        // Recupera o nome do usuário do localStorage
+        const username = localStorage.getItem('username');
+        document.getElementById('user-name').innerHTML = `Você está logado como: <strong>${username}</strong>`;
+
+        // Opcional: Limpar o localStorage ao sair
+        function logout() {
+            localStorage.removeItem('username');
+            window.location.href = 'index.html'; // Redireciona para a página de login
+        }
+    </script>
+
+</body>
+</html>
